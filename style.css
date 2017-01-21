@@ -1,0 +1,172 @@
+/**
+ * Fonts
+ * ------------------------------ */
+
+@font-face {
+	font-family: 'Genericons';
+	font-weight: normal;
+	font-style:  normal;
+
+	src: url('fonts/genericons/genericons-regular-webfont.eot');
+	src: url('fonts/genericons/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/genericons/genericons-regular-webfont.woff') format('woff'),
+	     url('fonts/genericons/genericons-regular-webfont.ttf') format('truetype'),
+	     url('fonts/genericons/genericons-regular-webfont.svg#genericonsregular') format('svg');
+}
+
+
+/**
+ * General Style
+ * ------------------------------ */
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+h1 { font-size: 3.5em; }
+
+h2 {
+	font-size: 2.8em;
+	color: #000;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+ }
+
+
+ /**
+ * Layout
+ * ------------------------------ */
+
+#container {
+	position: relative;
+	width: 100%;
+}
+
+#wrapper-inner {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#wrapper-inner div {
+	-webkit-box-ordinal-group: 1;
+	-moz-box-ordinal-group: 1;
+	box-ordinal-group: 1;
+
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+
+	width: 100%;
+	text-align: center;
+}
+
+/**
+ * Wrapper && Elements
+ * ------------------------------ */
+
+#match {
+	margin: 20px 0;
+	height: 40px;
+}
+
+#match h3 {
+	padding: 0;
+	margin: 0;
+}
+
+/**
+ * Icons SVG
+ * ------------------------------ */
+
+#match .right:before {
+	content: '\f418';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 66px/1 'Genericons';
+	vertical-align: top;
+	color: #2ebaae !important;
+	margin: -10px;
+
+}
+
+#match .wrong:before {
+	content: '\f405';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 56px/1 'Genericons';
+	vertical-align: top;
+	color: #f56a6a !important;
+}
+
+
+/**
+ * Buttons
+ * ------------------------------ */
+
+#articles button {
+	display: inline;
+}
+
+button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+	-webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+	-ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+	background-color: transparent;
+	border: 0;
+	box-shadow: inset 0 0 0 1px rgba(160, 160, 160, 0.3);
+	color: #3c3b3b !important;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 800;
+	height: 4.8125em;
+	letter-spacing: 0.25em;
+	line-height: 4.8125em;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin: 0.2em;
+}
+
+button:hover {
+	box-shadow: inset 0 0 0 1px #2ebaae;
+	color: #2ebaae !important;
+}
+
+button.btn-artikel.active {
+	box-shadow: inset 0 0 0 1px #2ebaae;
+	color: #2ebaae !important;
+}
+
+button.btn-next {
+	font-size: 0.7em;
+}
