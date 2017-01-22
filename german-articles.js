@@ -79,23 +79,10 @@ function getArticle(nouns, position) {
 }
 
 function addActiveClassButton(id) {
-	var btnArtikel = document.getElementById(id);
-	btnArtikel.className += " active";
-
-	if (id == "btn-der") {
-		document.getElementById("btn-die").className = "btn-artikel";
-		document.getElementById("btn-das").className = "btn-artikel";
-	}
-
-	if (id == "btn-die") {
-		document.getElementById("btn-der").className = "btn-artikel";
-		document.getElementById("btn-das").className = "btn-artikel";
-	}
-
-	if (id == "btn-das") {
-		document.getElementById("btn-der").className = "btn-artikel";
-		document.getElementById("btn-die").className = "btn-artikel";
-	}
+	document.getElementById("btn-der").className = "btn-artikel";
+	document.getElementById("btn-die").className = "btn-artikel";
+	document.getElementById("btn-das").className = "btn-artikel";
+	document.getElementById(id).className += " active";
 }
 
 function removeActiveClassButton ()  {
